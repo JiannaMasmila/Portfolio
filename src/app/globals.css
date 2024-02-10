@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*font of choice*/
+@import url('../../styles/fonts.css');
+
+/* Add your imports and other styles as needed */
+
+:root {
+  --text-color: #000; /* Black */
+  --background-color: #fff; /* White */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff; /* White for dark mode */
+    --background-color: #000; /* Black for dark mode */
+  }
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}

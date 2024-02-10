@@ -1,0 +1,10 @@
+/* styles/fonts.css */
+
+@font-face {
+    font-family: 'Panchang-Bold';
+    src: url('/fonts/Panchang-Bold.otf') format('opentype');
+    /* Add more src declarations for different file formats if needed */
+    font-weight: bold;
+    font-style: normal;
+  }
+  
