@@ -23,3 +23,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
+
+.text-custom-size {
+  font-size: 15rem;
+}
