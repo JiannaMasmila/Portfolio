@@ -1,24 +1,40 @@
-import '/src/app/globals.css'
+import '/src/app/globals.css';
 
 export default function Home() {
+  const name = Array(20).fill("JIANNA MASMILA");
+  const data2 = Array(20).fill("DESIGN - DEVELOPMENT - ART");
   return (
-    <main className="flex min-h-screen items-center justify-center p-24 bg-white">
-      <div className="snap-y snap-mandatory max-w-5xl w-full flex flex-col items-center justify-center">
-        <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto">
-          <code className="animate-marquee infinite text-custom-size font-bold whitespace-nowrap mr-40" style={{ fontFamily: 'PanchangBold', color: '#131313' }}>
-            JIANNA MASMILA
-          </code>
-          <code className="animate-marquee infinite text-custom-size font-bold whitespace-nowrap mr-40" style={{ fontFamily: 'PanchangBold', color: '#131313' }}>
-            JIANNA MASMILA
-          </code>
-          <code className="animate-marquee infinite text-custom-size font-bold whitespace-nowrap mr-40" style={{ fontFamily: 'PanchangBold', color: '#131313' }}>
-            JIANNA MASMILA
-          </code>
-          <code className="animate-marquee infinite text-custom-size font-bold whitespace-nowrap mr-40" style={{ fontFamily: 'PanchangBold', color: '#131313' }}>
-            JIANNA MASMILA
-          </code>
-        </p>
-      </div>
-    </main>
-  )
+    <main className='bg-white'>
+    <div className="text-custom-size items-center justify-center" style={{ fontFamily: 'PanchangBold', color: '#131313' }}>
+      {/* First section */}
+         <div className="whitespace-nowrap h-full min-h-screen flex items-center">
+          <div className="animate-infinite-slider flex w-[calc(250px*10)] items-center">
+            {name.map((text, index) => (
+              <div
+                className="font-bold"
+                key={index + name.length}
+              >
+                {text}{'\u00A0\u00A0'}
+              </div>
+            ))}
+          </div>
+        </div>
+
+      {/* Second section */}
+      {/* First section */}
+      <div className="whitespace-nowrap h-full min-h-screen flex items-center">
+          <div className="animate-infinite-slider flex w-[calc(250px*10)] items-center">
+            {data2.map((text, index) => (
+              <div
+                className="font-bold"
+                key={index + data2.length}
+              >
+                {text}{'\u00A0-\u00A0'}
+              </div>
+            ))}
+          </div>
+        </div>
+    </div>
+  </main>
+  );
 }
